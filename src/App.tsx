@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/contact/Contact";
-import LearnMore from "./pages/learn-more/LearnMore";
+import LearnMore from "./pages/learn-more/learnMore";
 import Portfolio from "./pages/Portfolio";
 import NotFound from "./pages/NotFound";
 // import CustomCursor from './components/CustomCursor'
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <main id="duowork" className="relative bg-duo-dark">
-        <TopNav/>
+        <TopNav />
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ function App() {
           <Route path="/our-work" element={<Portfolio />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </main> 
+      </main>
       {/* <CustomCursor /> */}
     </>
   );
