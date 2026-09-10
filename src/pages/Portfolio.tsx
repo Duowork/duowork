@@ -11,7 +11,8 @@ import ClosingCTA from "../components/ClosingCTA";
 /* ------------------------------------------------------------------------------ */
 
 export default function Portfolio() {
-  const [filter, _] = useState("all");
+  // No setter: FilterBar is currently commented out, so the filter never changes.
+  const [filter] = useState("all");
   const [openProject, setOpenProject] = useState<Project | null>(null);
 
   const visible = useMemo(
